@@ -58,7 +58,9 @@
     line-height: 35px;
     text-decoration: none;
 }
-
+.menu>a:hover{
+    background: url("../images/menu2.png") repeat;
+}
 .update {
     flex-basis: 25px;
     font-family: '標楷體';
