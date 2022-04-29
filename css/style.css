@@ -1,9 +1,9 @@
-*{
+* {
     box-sizing: border-box;
     overflow: hidden;
 }
 
-.main{
+.main {
     display: flex;
     width: 1024px;
     flex-wrap: wrap;
@@ -13,41 +13,83 @@
     padding: 0 12px;
 }
 
-.top , .menu , .update , .marquee , .content , .footer{
+.top,
+.menu,
+.update,
+.marquee,
+.content,
+.footer {
     border: 1px solid lightgray;
 }
 
-.top{
+.top {
     flex-basis: 1000px;
     height: 65px;
 }
 
-.aside{
+.aside {
     display: flex;
     flex-direction: column;
     height: calc(768px - 29px - 20px);
     flex-basis: 215px;
 }
-.menu{
+
+.menu {
     flex-basis: calc(100% - 25px);
-}
-.update{
-    flex-basis: 25px;
+    font-family: '標楷體';
+    font-weight: 500;
+    font-size: 16px;
+    color: #000000;
 }
 
-.section{
+.menuHeader {
+    font-size: 24px;
+    text-decoration: underline;
+    color: #FF00FF;
+    margin: 10px;
+}
+
+.menu>a{
+    display: inline-block;
+    flex-wrap: wrap;
+    background: url("../images/menu1.png") repeat;
+    width: 200px;
+    height: 35px;
+    line-height: 35px;
+    text-decoration: none;
+}
+
+.update {
+    flex-basis: 25px;
+    font-family: '標楷體';
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
+    padding: 3px;
+}
+
+.section {
     display: flex;
     flex-direction: column;
     flex-basis: calc(1000px - 215px);
 }
-.marquee{
+
+.marquee {
     flex-basis: 29px;
+    font-family: '標楷體';
+    font-size: 24px;
+    color: #0000FF;
 }
-.content{
+
+.content {
     flex-basis: calc(100% - 29px);
 }
 
-.footer{
+.footer {
     flex-basis: 1000px;
     height: 20px;
+    font-family: '標楷體';
+    color: #000000;
+    text-align: center;
+    font-size: 16px;
 }
